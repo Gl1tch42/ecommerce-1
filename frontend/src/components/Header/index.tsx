@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdAccountCircle, MdExpandMore, MdSearch } from "react-icons/md";
 import "./styles.css";
 
-import Search from '../Search'
+import logo from "../../assets/logo-sem-nome.jpg";
 
 function Header() {
   const [products, showProducts] = useState(false);
@@ -24,7 +24,7 @@ function Header() {
         <div className="header">
           <div className="logo">
             <a href="/">
-              <h1>Logo</h1>
+              <img src={logo} alt="Logo" />
             </a>
           </div>
           <div className="links">
@@ -55,7 +55,6 @@ function Header() {
                 </li>
               </a>
               <MdSearch className="lupa"/>
-              <Search />
             </ul>
           </div>
         </div>
