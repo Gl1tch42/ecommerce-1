@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold !important;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 2em;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 0 0 2em;
+    color: #1a1a1d;
+    background-color: #fff;
+}
+
+.menu li:hover, .procucts svg:hover {
+    color: #929292;
+}
+
+.menu li svg {
+    font-size: 20px;
+    margin-right: 0.25em;
+}
+
+.products {
+    display: flex;
+}
+
+.products svg {
+    margin-top: 2px;
+    font-size: 20px;
+    color: #1a1a1d;
+}
+
+.specify-products {
+    position: absolute;
+    opacity: 0;
+    width: 108px;
+    margin: 20px 0 0 10px;
+    font-size: 12px;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.specify-products li {
+    background-color: #444444;
+    color: #fff;
+}
+
+.active {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: visible;
+}
+
+.lupa {
+    font-size: 22px;
+    margin-left: 2em;
+}
+
+.loginAtivo {
+    display: flex;
+}

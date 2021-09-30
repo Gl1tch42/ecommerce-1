@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+
+.login-logo img {
+    width: 300px;
+}
+
+.login-right {
+    background-color: #6e6e6e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.login-right h1 {
+    font-size: 50px;
+    margin-bottom: 1.1em;
+}
+
+.login-right h4 {
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.login-right h1, .login-right h4 {
+    text-align: center;
+}
+
+.login-input-email, .login-input-passoword {
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: #1a1a1d;
+    border-radius: 5px;
+    padding: 3px;
+    width: 98%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.login-input-email svg, .login-input-passoword svg {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.login-input-email input, .login-input-passoword input {
+    background: transparent;
+    width: 100%;
+    outline-width: 0;
+    color: #8a8a8a;
+    border: none;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.login-right button, .btn-cadastro {
+    width: 99%;
+    background-color: #121214;
+    color: #eff2f5;
+    font-weight: 800;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: none;
+    outline-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-right button:hover, .btn-cadastro:hover {
+    cursor: pointer;
+    background-color: #464646;
+}
+
+.login-eye {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 30;
+    margin-right: 10px;
+}

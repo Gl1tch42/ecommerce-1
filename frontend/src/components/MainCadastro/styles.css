@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+
+.cadastro-logo img {
+    width: 300px;
+}
+
+.cadastro-right {
+    background-color: #6e6e6e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.cadastro-right h1 {
+    font-size: 50px;
+    margin-bottom: 1.1em;
+}
+
+.cadastro-right h4 {
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.cadastro-right h1, .cadastro-right h4 {
+    text-align: center;
+}
+
+.cadastro-input-nome, .cadastro-input-data, .cadastro-input-email, .cadastro-input-confirmEmail, .cadastro-input-tel, .cadastro-input-passoword {
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: #1a1a1d;
+    border-radius: 5px;
+    padding: 3px;
+    width: 98%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.cadastro-input-nome svg, .cadastro-input-data svg, .cadastro-input-email svg, .cadastro-input-confirmEmail svg, .cadastro-input-tel svg, .cadastro-input-passoword svg {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.cadastro-input-nome input, .cadastro-input-data input, .cadastro-input-email input, .cadastro-input-confirmEmail input, .cadastro-input-tel input, .cadastro-input-passoword input {
+    background: transparent;
+    width: 100%;
+    outline-width: 0;
+    color: #8a8a8a;
+    border: none;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.cadastro-right button {
+    width: 99%;
+    background-color: #121214;
+    color: #eff2f5;
+    font-weight: 800;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: none;
+    outline-width: 0;
+}
+
+.cadastro-right button:hover {
+    cursor: pointer;
+    background-color: #464646;
+}
+
+.cadastro-eye {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 30;
+    margin-right: 10px;
+}
+
+.form-error {
+    color: #ff2929;
+    font-size: 14px;
+}
