@@ -9,12 +9,12 @@ import { HiEye, HiEyeOff } from "react-icons/hi";
 function MainCadastro() {
 
     const [values, setValues] = useState({
-        nomeForm: '',
-        dataForm: '',
-        emailForm: '',
-        confirmEmailForm: '',
-        telForm: '',
-        senhaForm: '',
+        nome: '',
+        data: '',
+        email: '',
+        confirmEmail: '',
+        tel: '',
+        senha: '',
     });
     function handleChange(event: any) {
         setValues({
@@ -34,10 +34,10 @@ function MainCadastro() {
             cadastro_usuario: values,
         }
         e.preventDefault();
-        if(values.nomeForm === '' || values.dataForm === '' || values.emailForm === '' || values.confirmEmailForm === '' || values.telForm === '' ||values.senhaForm === '') {
-            console.log('Não cadastrado!')
+        if(values.nome === '' || values.data === '' || values.email === '' || values.confirmEmail === '' || values.tel === '' ||values.senha === '') {
+            console.log('Não cadastrado!');
         } else {
-            console.log('Cadastrado com sucesso!', cadastro)
+            console.log('Cadastrado com sucesso', cadastro);
     }
 }
     
@@ -54,8 +54,8 @@ function MainCadastro() {
                     <div className="cadastro-input-nome">
                         <MdPerson />
                         <input
-                            name="nomeForm"
-                            value={values.nomeForm}
+                            name="nome"
+                            value={values.nome}
                             placeholder="Digite seu nome completo"
                             required
                             onChange={handleChange}
@@ -65,10 +65,10 @@ function MainCadastro() {
                     <div className="cadastro-input-data">
                         <MdDateRange />
                         <InputMask
-                            name="dataForm"
+                            name="data"
                             mask="99/99/9999"
                             placeholder="DD/MM/AAAA"
-                            value={values.dataForm}
+                            value={values.data}
                             required
                             onChange={handleChange}
                         />
@@ -77,9 +77,9 @@ function MainCadastro() {
                     <div className="cadastro-input-email">
                         <MdEmail />
                         <input
-                            name="emailForm"
+                            name="email"
                             placeholder="email@example.com"
-                            value={values.emailForm}
+                            value={values.email}
                             required
                             onChange={handleChange}
                         />
@@ -88,10 +88,10 @@ function MainCadastro() {
                     <div className="cadastro-input-confirmEmail">
                         <MdEmail />
                         <input
-                            name="confirmEmailForm"
+                            name="confirmEmail"
                             type="email"
                             placeholder="Confirme seu e-mail"
-                            value={values.confirmEmailForm}
+                            value={values.confirmEmail}
                             required
                             onChange={handleChange}
                         />
@@ -100,11 +100,11 @@ function MainCadastro() {
                     <div className="cadastro-input-tel">
                         <MdSmartphone />
                         <InputMask
-                            name="telForm"
+                            name="tel"
                             type="tel"
                             mask="(99) 99999-9999"
                             placeholder="(99) 99999-9999"
-                            value={values.telForm}
+                            value={values.tel}
                             required
                             onChange={handleChange}
                         />
@@ -113,9 +113,9 @@ function MainCadastro() {
                     <div className="login-input-passoword">
                         <MdLock />
                         <input
-                            name="senhaForm"
+                            name="senha"
                             type={show ? "text" : "password"}
-                            value={values.senhaForm}
+                            value={values.senha}
                             placeholder="Digite sua senha"
                             required
                             onChange={handleChange}
