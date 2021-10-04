@@ -8,6 +8,3 @@ const connection = mongoose.connect(dbConfig, {
 });
 
 module.exports = connection;
-
-
-
