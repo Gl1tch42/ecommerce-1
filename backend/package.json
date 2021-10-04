@@ -18,7 +18,8 @@
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsnd --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "keywords": [],
   "author": "",
