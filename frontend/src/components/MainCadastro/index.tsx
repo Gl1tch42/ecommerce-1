@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import InputMask from 'react-input-mask'
 
+import api from '../../services/api'
+
 import "./styles.css";
 
 import { MdEmail, MdLock, MdPerson, MdDateRange, MdSmartphone } from "react-icons/md";
@@ -16,6 +18,7 @@ function MainCadastro() {
         tel: '',
         senha: '',
     });
+
     function handleChange(event: any) {
         setValues({
             ...values,
