@@ -1,6 +1,7 @@
 import express, { Router } from 'express';
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import crypto = require('crypto')
 
 const authConfig = require('../../config/auth.json')
 
@@ -22,9 +23,6 @@ router.get('/users', async (req, res) => {
 router.post('/register', async (req, res) => {
     const { email } = req.body
     try {
-
-
-
         if (await User.findOne({ email }))
             return res.status(400).send({ error: 'O usuário já existe. ' })
         const user = await User.create(req.body);
@@ -35,10 +33,10 @@ router.post('/register', async (req, res) => {
 
         user.senha = undefined;
 
-        return res.send({ 
+        return res.send({
             user,
             token: generateToken({ id: user.id })
-         });
+        });
     } catch (err) {
         return res.status(400).send({ error: 'Falha no registro. ' })
     }
@@ -61,10 +59,10 @@ router.post('/authenticate', async (req, res) => {
         expiresIn: 86400,
     })
 
-    res.send({ 
-        user, 
+    res.send({
+        user,
         token
-     })
+    })
 })
 
 module.exports = (app: { use: (arg0: string, arg1: Router) => any; }) => app.use('/auth', router)

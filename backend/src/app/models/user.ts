@@ -6,29 +6,35 @@ const UserSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
+    
     data: {
         type: String,
         require: true,
     },
+
     email: {
         type: String,
         require: true,
         lowercase: true,
     },
+
     confirmEmail: {
         type: String,
         require: true,
         lowercase: true,
     },
+
     tel: {
         type: String,
         require: true,
     },
+
     senha: {
         type: String,
         require: true,
         select: false,
     },
+    
     createdAt: {
         type: Date,
         default: Date.now
